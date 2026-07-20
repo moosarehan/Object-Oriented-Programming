@@ -26,6 +26,16 @@ Object-Oriented-Programming/
 │   ├── captilizesentences.cpp
 │   └── inventoryManagementSystem.cpp
 │
+├── OOP-Classes-and-Inheritance/     ← Classes, const-correctness, static members & inheritance
+│   ├── ObjectCounter.cpp
+│   ├── ConstStaticDemo.cpp
+│   ├── StudentSectionManager.cpp
+│   ├── JaggedArray.cpp
+│   ├── TollboothSimulation.cpp
+│   ├── TimeAddition.cpp
+│   ├── CarInfo.cpp
+│   └── ScientistChemist.cpp
+│
 └── README.md
 ```
 
@@ -36,6 +46,7 @@ Object-Oriented-Programming/
 ## 📦 Modules
 
 ### 1. 🔷 Pointers and Structures
+
 > **Folder:** [`OOP-Pointers-and-Structures/`](./OOP-Pointers-and-Structures)
 
 Covers the fundamentals of C++ pointers, pointer arithmetic, dynamic memory allocation (`new` / `delete`), and user-defined `struct` types.
@@ -55,6 +66,33 @@ Covers the fundamentals of C++ pointers, pointer arithmetic, dynamic memory allo
 - Dynamic memory with `new[]` / `delete[]`
 - Nested structs and struct member functions
 - Pass-by-pointer and pass-by-reference
+
+---
+
+### 2. 🔶 Classes and Inheritance
+
+> **Folder:** [`OOP-Classes-and-Inheritance/`](./OOP-Classes-and-Inheritance)
+
+Covers class design fundamentals — const-correctness, static members, dynamic memory inside classes, copy constructors, operator/method chaining, and single inheritance.
+
+| File | Description |
+|------|-------------|
+| [`ConstStaticDemo.cpp`](./OOP-Classes-and-Inheritance/ConstStaticDemo.cpp) | Demonstrates why `const` member functions can't modify state, and why `static` member functions can only access `static` data |
+| [`ObjectCounter.cpp`](./OOP-Classes-and-Inheritance/ObjectCounter.cpp) | A self-counting class using a `static` member to track how many instances have been created |
+| [`StudentSectionManager.cpp`](./OOP-Classes-and-Inheritance/StudentSectionManager.cpp) | `Student` and `Section` classes managing multiple sections of students with add/update/print functionality |
+| [`JaggedArray.cpp`](./OOP-Classes-and-Inheritance/JaggedArray.cpp) | Dynamically allocated jagged (ragged) 2D array using `int**`; supports method chaining |
+| [`TollboothSimulation.cpp`](./OOP-Classes-and-Inheritance/TollboothSimulation.cpp) | Tollbooth simulation tracking paying/non-paying cars and cash collected using `static` members |
+| [`TimeAddition.cpp`](./OOP-Classes-and-Inheritance/TimeAddition.cpp) | `ClockTime` class that adds two time objects together with hour/minute/second rollover |
+| [`CarInfo.cpp`](./OOP-Classes-and-Inheritance/CarInfo.cpp) | `Car` class demonstrating a user-defined copy constructor |
+| [`ScientistChemist.cpp`](./OOP-Classes-and-Inheritance/ScientistChemist.cpp) | `Scientist`/`Chemist` inheritance example demonstrating member function name hiding, resolved with the scope resolution operator |
+
+**Key concepts practiced:**
+- `const` member functions and const-correctness
+- `static` data members and `static` member functions
+- Dynamic memory management inside a class (constructor/destructor pairs)
+- Copy constructors and deep vs. shallow copying
+- Method chaining via reference-returning functions
+- Single inheritance and function name hiding
 
 ---
 
@@ -86,9 +124,9 @@ filename.exe
 | # | Topic | Status |
 |---|-------|--------|
 | 1 | Pointers & Structures | ✅ Done |
-| 2 | Classes & Objects | 🔜 Coming soon |
-| 3 | Constructors & Destructors | 🔜 Coming soon |
-| 4 | Inheritance | 🔜 Coming soon |
+| 2 | Classes & Objects | ✅ Done |
+| 3 | Constructors & Destructors | ✅ Done |
+| 4 | Inheritance | ✅ Done |
 | 5 | Polymorphism & Virtual Functions | 🔜 Coming soon |
 | 6 | Operator Overloading | 🔜 Coming soon |
 | 7 | Templates | 🔜 Coming soon |
